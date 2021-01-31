@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            My Family
+        </title>
+    </head>
+    <body>
+    <h1>
+        My Family Book
+    </h1>
+    <img src="The Family Book.jpeg" id="album">
+    <h2 id="names">Sajjan Didwania</h2>
+
+    <br>
+    <button type="button" onclick="next()">Next</button>
+    
+        <script>
+       var names=["Sajjan Didwania",
+       "Saroj Didwania",
+       "Niraj Didwania",
+       "Sweta Didwania",
+       "Sanvi Didwania",
+       "Nitya Didwania"];
+        var images=["Grandfather.jpeg",
+        "Grandmother.png",
+        "Father.jpg",
+        "Mother.png",
+        "Older Daughter.jpg",
+        "Younger Daughter.jpeg" ];
+        var i=0;
+        function next() { 
+ if (i==8)
+   {
+     i=0;
+   }
+   
+   else{  
+ 
+    document.getElementById("album").src = images[i];
+ 
+ 
+ 
+    i++;
+  
+
+        }
+       
+        if (i==8)
+   {
+     i=0;
+   }
+   
+   else{  
+ 
+    document.getElementById("names").innerHTML = names[i];
+ 
+ 
+    i++;
+  
+
+        }
+   }
+        </script>
+    </body>
+</html>
